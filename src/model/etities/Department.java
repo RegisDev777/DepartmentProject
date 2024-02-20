@@ -1,4 +1,4 @@
-package Model.Etities;
+package model.etities;
 
 import java.io.Serializable;
 import java.util.Objects;

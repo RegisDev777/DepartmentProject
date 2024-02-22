@@ -32,7 +32,7 @@ public class program {
             
             System.out.println();
             
-            System.out.println("=== TEST PUSH GIT ===");
+            System.out.println("=== TEST PUSH GIT PARA TESTE ===");
             
     } 
 }

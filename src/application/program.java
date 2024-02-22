@@ -3,6 +3,7 @@ package application;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Date;
 import java.util.List;
 
 import db.DB;
@@ -21,7 +22,11 @@ public class program {
     	    Seller seller = sellerDao.findById(3);
             System.out.println(seller);
             
+            
+            
             System.out.println();
+            
+            
             
             System.out.println("=== TEST 2: seller findByDepartment ===");
             Department department = new Department(2, null);
@@ -30,7 +35,11 @@ public class program {
 				System.out.println(obj);
 			}
             
+            
+            
             System.out.println();
+            
+            
             
             System.out.println("=== TEST 3: seller findAll ===");
             list = sellerDao.findAll();
@@ -38,7 +47,19 @@ public class program {
             	System.out.println(obj);
             }
             
+            
             System.out.println();
+            
+            
+            System.out.println("=== TEST 4: seller Insert ===");
+            Seller newSeller = new Seller(null, "Greg", "greg@gamil.com", new Date(), 4000.00, department);
+            sellerDao.insert(newSeller);
+            System.out.println("Inserted! New id = " + newSeller.getId());
+            
+            
+            System.out.println();
+            
+            
             
             System.out.println("=== TEST PUSH GIT PARA TESTE ===");
             

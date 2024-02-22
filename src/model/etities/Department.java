@@ -63,12 +63,13 @@ public class Department implements Serializable {
 				Department other = (Department) obj;
 				return Objects.equals(id, other.id);
 		}
-					
+
+
 			@Override
 			public String toString() {
-				// TODO Auto-generated method stub
-				return super.toString();
+				return "Department [id=" + id + ", name=" + name + "]";
 			}
+					
 			
 			
 			

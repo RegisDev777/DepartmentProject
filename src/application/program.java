@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 import db.DB;
 import db.DbExeception;
@@ -17,6 +18,10 @@ public class program {
 
     public static void main(String[] args) {
       
+    Scanner sc = new Scanner(System.in);	
+    	
+    	
+    	
     	    sellerDao sellerDao = DaoFactory.createSellerDao();    
     	    System.out.println("=== TEST 1: seller findById ===");
     	    Seller seller = sellerDao.findById(3);
@@ -69,8 +74,19 @@ public class program {
             System.out.println();
             
             
+            System.out.println("=== TEST 6: seller Delete ===");
+            System.out.print("Enter id for delete test: ");
+            int id = sc.nextInt();
+            sellerDao.deleteById(id);
+            System.out.println("Delete completed");
+            
+            System.out.println();
+            
+            
             
             System.out.println("=== TEST PUSH GIT PARA TESTE ===");
             
+            
+            sc.close();
     } 
 }

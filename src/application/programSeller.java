@@ -14,7 +14,7 @@ import model.dao.sellerDao;
 import model.etities.Department;
 import model.etities.Seller;
 
-public class program {
+public class programSeller {
 
     public static void main(String[] args) {
       

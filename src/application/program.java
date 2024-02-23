@@ -59,6 +59,15 @@ public class program {
             
             System.out.println();
             
+            System.out.println("=== TEST 5: seller Uptade ===");
+            seller = sellerDao.findById(1);
+            seller.setName("marta waine");
+            sellerDao.update(seller);
+            System.out.println("Update completed");
+            
+            
+            System.out.println();
+            
             
             
             System.out.println("=== TEST PUSH GIT PARA TESTE ===");
